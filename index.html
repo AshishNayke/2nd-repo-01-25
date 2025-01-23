@@ -1,57 +1,139 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>HOME</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-item h3 {
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
 <body>
-  
-  <header>
-  <h1><small><u>PORTFOLIO</u></small></h1>
-  </header>
-  
-  <main>
-    <section>
-      <a href="https://www.instagram.com/naykeashish?igsh=OXF0Nm52cDJhOHox">
-  <img src="profile img.png">
-      </a>
-  <pre>NAME : <b>ASHISH NAYKE</b>
-AGE : 21+ Yr OLD
-HIGHT : 172CM
-  </pre>
+    <header>
+        <h1>Online Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Beautiful Art</h2>
     </section>
-    
-    <section>
-    <article>
-   <h2><u>BIO</u></h2>
-  <p><small><i><u>simple sober, optimestic as well as pessimestic, not punctual however humble,</u> single, alone, helpless, hopeless, contemplating life, desire to conquer everything, desire to trenscend above and beyond, desire to be unreachable</i></small></p>
-    </article>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Artwork">
+            <h3>Artwork Title 1</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Artwork">
+            <h3>Artwork Title 2</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Artwork">
+            <h3>Artwork Title 3</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Artwork">
+            <h3>Artwork Title 4</h3>
+        </div>
     </section>
-    
-    <section>
-  <hr>
-      <ul>
-        <li><a href="page1.html">EDUCATION</a></li>
-<hr>
-        <li><a href="page2.html">EXPERIENCE</a></li>
-<hr>
-        <li><a href="page3.html">PROJECTS</a></li>
-        
-      </ul>
-  <hr>
-    </section><br>
-  </main>
-  
-  <footer>
-    <pre>
-      <small><b>
-              <i>Contact Me Click. </i><a href="contact.html"><b><big>Here</big></b></a>
-      </b>
-      </small>
-    </pre>
-  </footer>
-    
+
+    <footer>
+        <p>&copy; 2025 Online Art Gallery. All rights reserved.</p>
+    </footer>
 </body>
 </html>
